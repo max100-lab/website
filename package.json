@@ -11,6 +11,8 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,mjs,cjs,mdx,md}\" --cache",
     "format:write": "prettier --write \"**/*.{ts,tsx,js,jsx,mjs,cjs,mdx,md}\" --cache",
     "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "package-manager:check": "node scripts/check-pnpm-hygiene.cjs",
@@ -67,7 +69,8 @@
     "tailwindcss": "^3.4.19",
     "tailwindcss-animate": "^1.0.7",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.3"
   },
   "packageManager": "pnpm@12.10.1+sha512.ba40a37eb1a370d60fea8c4cf1d364c13bcccef518e98ad2bcee954f539d38da37458e58261a3fa55e06523450ea0ffff9f497b135be41f2c15c1642bacace6c",
   "engines": {
