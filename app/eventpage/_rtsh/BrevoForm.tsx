@@ -43,7 +43,7 @@ export default function BrevoForm() {
       ref={iframeRef}
       className="block w-full max-w-[520px] border-0 transition-[height] duration-200"
       src={FORM_SRC}
-      title="Join the Road to START Hack 2026 waitlist"
+      title="Join the START Hack League Munich 2026 waitlist"
       height={560}
       loading="lazy"
       allow="clipboard-write"

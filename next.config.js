@@ -30,6 +30,11 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/eventpage/rtsh',
+        destination: 'https://app.hackleague.org/events/start?chapter=munich',
+        permanent: false,
+      },
     ];
   },
   async rewrites() {

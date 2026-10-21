@@ -66,7 +66,12 @@ export const mainNav: NavEntry[] = [
         secondary: true,
       },
       { label: 'Road to START Summit', href: '/eventpage/rtss', external: true, secondary: true },
-      { label: 'START Hack Munich', href: '/eventpage/rtsh', external: true, secondary: true },
+      {
+        label: 'START Hack League Munich',
+        href: 'https://app.hackleague.org/events/start?chapter=munich',
+        external: true,
+        secondary: true,
+      },
       { label: 'START Labs', href: '/labs', external: true, secondary: true },
     ],
   },
@@ -88,4 +93,4 @@ export const footerNav: NavLink[] = [
  * Routes that render without the site header and footer: standalone event
  * microsites with their own chrome.
  */
-export const standaloneRoutes = ['/eventpage/rtss', '/eventpage/rtsh', '/labs'];
+export const standaloneRoutes = ['/eventpage/rtss', '/labs'];

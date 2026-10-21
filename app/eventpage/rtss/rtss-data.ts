@@ -143,9 +143,9 @@ export const faqs: FaqItem[] = [
       'The winner secures a spot at START Summit in St. Gallen, a guaranteed startup booth, a startup pass, and the opportunity to compete for CHF 10,000 in prize money.',
   },
   {
-    question: 'How is it different from Road to START Hack?',
+    question: 'How is it different from START Hack League Munich?',
     answer:
-      'Road to START Hack is a weekend-long hackathon where students build software and hardware projects. Road to START Summit is a pitching competition for startups.',
+      'START Hack League Munich is a weekend-long hackathon where students build software and hardware projects. Road to START Summit is a pitching competition for startups.',
   },
   {
     question: 'How can I attend or apply?',
