@@ -11,18 +11,27 @@ import { rtssImage, SplitCta } from './rtss-ui';
 
 const HERO_ALT = 'White RTSS lettering layered through a robotic hand on midnight blue';
 
-const heroBase = { alt: HERO_ALT, fill: true, sizes: '100vw' } as const;
+const heroBase = {
+  alt: HERO_ALT,
+  fill: true,
+  quality: 100,
+  loading: 'eager',
+  fetchPriority: 'high',
+} as const;
 
 /** The wide crop, for anything 640px and up. */
 const { props: desktopHero } = getImageProps({
   ...heroBase,
   src: rtssImage('hero-desktop.png'),
+  // Cover can scale the wide artwork beyond the viewport on tall screens.
+  sizes: 'max(100vw, 178vh)',
 });
 
 /** The portrait crop of the same composition, for phones. */
 const { props: mobileHero } = getImageProps({
   ...heroBase,
   src: rtssImage('hero-mobile.png'),
+  sizes: '100vw',
 });
 
 /**
@@ -110,7 +119,7 @@ export default function RtssHero() {
       />
       <motion.div className="absolute inset-0 z-1" style={{ y: reduce ? 0 : y }}>
         <picture>
-          <source media="(max-width: 639px)" srcSet={mobileHero.srcSet} />
+          <source media="(max-width: 639px)" srcSet={mobileHero.srcSet} sizes="100vw" />
           <img
             {...desktopHero}
             // Restated after the spread so the a11y linter can see it.
