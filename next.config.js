@@ -64,6 +64,7 @@ const nextConfig = {
     // more compute. WebP is universally supported and ~half the transformations
     // of avif+webp. See Vercel: managing-image-optimization-costs.
     formats: ['image/webp'],
+    qualities: [75, 100],
     minimumCacheTTL: 31536000,
     remotePatterns: [
       // Sanity image CDN — startups, partners, network logos and news all come

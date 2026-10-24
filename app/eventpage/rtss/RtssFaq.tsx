@@ -19,7 +19,7 @@ export default function RtssFaq() {
   return (
     <section
       id="questions"
-      className="grid scroll-mt-8 grid-cols-[42%_1fr] gap-[7%] px-5 pt-[50px] pb-[200px] max-sm:grid-cols-1 max-sm:gap-10 max-sm:pt-0 max-sm:pb-[100px] sm:px-8 lg:px-10"
+      className="grid scroll-mt-8 grid-cols-[42%_1fr] gap-[7%] px-5 pt-[50px] pb-[200px] max-sm:grid-cols-1 max-sm:gap-10 max-sm:pt-12 max-sm:pb-[100px] sm:px-8 lg:px-10"
     >
       <Reveal>
         <Pill>FAQ</Pill>
@@ -74,13 +74,13 @@ export default function RtssFaq() {
                 <div className="pr-[50px] pb-[38px] text-[18px] leading-[1.4] text-muted-foreground max-sm:pr-[15px] max-sm:pb-7 max-sm:text-[16px]">
                   <p>{faq.answer}</p>
                   {faq.links && (
-                    <p className="mt-5">
+                    <p className="mt-5 flex flex-wrap gap-x-6 gap-y-3 max-sm:flex-col max-sm:items-start">
                       {faq.links.map((link) => (
                         <a
                           key={link.href}
                           href={link.href}
                           tabIndex={isOpen ? 0 : -1}
-                          className="mr-6 text-foreground underline decoration-brand-pink decoration-2 underline-offset-4"
+                          className="text-foreground underline decoration-brand-pink decoration-2 underline-offset-4"
                         >
                           {link.label}
                         </a>
