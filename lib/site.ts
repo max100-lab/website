@@ -48,6 +48,12 @@ export const mainNav: NavEntry[] = [
     items: [
       { label: 'All Events', href: '/events' },
       {
+        label: 'Bay Area Trip',
+        href: 'https://start-munich-bay-area.fastvale4.chatgpt.site/',
+        external: true,
+        secondary: true,
+      },
+      {
         label: 'Europe Embodied',
         href: 'https://europe-embodied.com/',
         external: true,
