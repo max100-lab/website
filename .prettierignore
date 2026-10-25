@@ -18,3 +18,6 @@ test-results
 # `pnpm format:check` (which globs **/*.md) from failing on upstream files.
 .agents
 skills-lock.json
+
+# Keep the bundled globe geometry as its original compact data asset.
+public/eventpage/bayarea/assets/world.json

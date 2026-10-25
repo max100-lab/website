@@ -49,8 +49,7 @@ export const mainNav: NavEntry[] = [
       { label: 'All Events', href: '/events' },
       {
         label: 'Bay Area Trip',
-        href: 'https://start-munich-bay-area.fastvale4.chatgpt.site/',
-        external: true,
+        href: '/eventpage/bayarea',
         secondary: true,
       },
       {

@@ -429,6 +429,15 @@ npx vgpu check components/aura/field.wgsl --require-validation
 `protobufjs`, `unrs-resolver`, `core-js`) and `overrides` that pin transitive dependencies to
 patched versions. Add CVE pins there.
 
+## Bay Area Trip
+
+`/eventpage/bayarea` serves the standalone Bay Area Trip microsite. The Events menu links to this
+internal route in both desktop and mobile navigation. Its HTML, styles, globe scripts and photos
+live in `public/eventpage/bayarea/`; the route handler prerenders the HTML at build time so it does
+not inherit the main website's header or styles. Asset URLs use `/eventpage/bayarea/` explicitly,
+including the globe's world-data fetch, so the page works at its nested URL without an external
+hosting dependency.
+
 ## Deployment
 
 Vercel, connected to the GitHub repo. There is no `vercel.json` — routing, the permanent `/home`

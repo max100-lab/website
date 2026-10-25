@@ -18,6 +18,7 @@ const routes = [
   { path: '/join-start/2026', name: 'join-start 2026' },
   { path: '/for-partners', name: 'for-partners' },
   { path: '/eventpage/rtss', name: 'eventpage/rtss' },
+  { path: '/eventpage/bayarea', name: 'eventpage/bayarea' },
 ];
 
 for (const { path, name } of routes) {

@@ -21,6 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${BASE}/eventpage/bayarea`,
+      lastModified: '2026-10-25',
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${BASE}/startups`,
       lastModified: LAST_MODIFIED,
       changeFrequency: 'weekly',
