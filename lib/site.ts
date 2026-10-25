@@ -48,6 +48,11 @@ export const mainNav: NavEntry[] = [
     items: [
       { label: 'All Events', href: '/events' },
       {
+        label: 'Bay Area Trip',
+        href: '/eventpage/bayarea',
+        secondary: true,
+      },
+      {
         label: 'Europe Embodied',
         href: 'https://europe-embodied.com/',
         external: true,

@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="START Munich’s Bay Area trip brings around 20 student entrepreneurs to San Francisco and Silicon Valley for company visits and conversations with founders, investors, and researchers."
+    />
+    <title>Bay Area Trip | START Munich</title>
+    <link rel="stylesheet" href="/eventpage/bayarea/style.css?v=25" />
+    <link rel="canonical" href="https://www.startmunich.de/eventpage/bayarea" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bay Area Trip | START Munich" />
+    <meta property="og:url" content="https://www.startmunich.de/eventpage/bayarea" />
+    <meta property="og:description" content="Student-led. Munich-built. Two weeks in SF." />
+    <meta property="og:image" content="https://www.startmunich.de/START_munich_black-01.png" />
+    <link rel="icon" href="/startIcon.png" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="#" aria-label="START Munich home"
+        ><img
+          src="/eventpage/bayarea/assets/start-logo.svg"
+          alt="START Munich"
+          width="110"
+          height="50" /></a
+      ><a class="nav-memory" href="mailto:bayarea@startmunich.de">Partner with us ↗</a>
+    </header>
+    <main>
+      <section class="journey-scroll" id="journey">
+        <div class="journey-pin">
+          <div class="hero">
+            <div class="hero-copy">
+              <h1><span>START Munich goes</span> <em>Bay Area.</em></h1>
+              <p class="hero-subtitle">Student-led. Munich-built. Two weeks in SF.</p>
+            </div>
+            <div class="scene">
+              <canvas
+                id="globe"
+                aria-label="Scroll-driven globe showing the journey from Munich to San Francisco"
+                role="img"
+              ></canvas>
+              <div class="route-progress">
+                <span>MUC</span>
+                <div><i id="route-fill"></i></div>
+                <span>SF</span>
+              </div>
+              <span class="scroll-cue">SCROLL TO CROSS THE ATLANTIC ↓</span>
+            </div>
+          </div>
+          <div class="mobile-story-peek"></div>
+        </div>
+      </section>
+      <section
+        class="memories scrapbook story-scroll"
+        id="memories"
+        aria-label="START Munich, the program, and the participants"
+      >
+        <div class="story-inner">
+          <div class="story-row story-row-1">
+            <article class="story-text">
+              <span class="note-label">START MUNICH</span>
+              <h2>Built by students.<br /><em>Connected across Europe.</em></h2>
+              <p>
+                <a href="https://www.startmunich.de/" target="_blank" rel="noopener"
+                  >START Munich</a
+                >
+                is Germany's leading student entrepreneurship initiative, with
+                <strong>400+ members</strong> from universities including TUM, LMU, and HM. We are
+                <strong>run entirely by students</strong> and operate on a nonprofit basis.
+              </p>
+              <p>
+                <strong>120+ startups</strong> were founded out of the community, including
+                <strong>6 that joined Y Combinator</strong>. As part of START Global, we connect
+                ambitious builders across 15+ European chapters.
+              </p>
+              <div
+                class="alumni-startups"
+                aria-label="Startups founded by the START Munich community"
+              >
+                <a
+                  href="https://traderepublic.com/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Trade Republic"
+                  ><img
+                    src="/eventpage/bayarea/assets/startups/trade-republic.png"
+                    alt="Trade Republic"
+                    width="1350"
+                    height="618"
+                    loading="lazy" /></a
+                ><a href="https://www.idnow.io/" target="_blank" rel="noopener" aria-label="IDnow"
+                  ><img
+                    src="/eventpage/bayarea/assets/startups/idnow.jpg"
+                    alt="IDnow"
+                    width="2400"
+                    height="980"
+                    loading="lazy" /></a
+                ><a
+                  class="alumni-lio"
+                  href="https://www.asklio.ai/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Lio"
+                  ><img
+                    src="/eventpage/bayarea/assets/startups/lio.jpg"
+                    alt=""
+                    width="200"
+                    height="200"
+                    loading="lazy"
+                  /><span>Lio</span></a
+                ><span class="alumni-more">and many more...</span>
+              </div>
+            </article>
+            <div class="photo-cluster" aria-label="Photos from previous Bay Area trips">
+              <figure class="polaroid" style="--x: 3%; --y: 73%; --tilt: -5deg">
+                <img
+                  src="/eventpage/bayarea/assets/IMG_1753.jpg"
+                  alt="Trip participants exploring together"
+                  loading="eager"
+                  width="800"
+                  height="900"
+                />
+              </figure>
+              <figure class="polaroid" style="--x: 20%; --y: 77%; --tilt: 6deg">
+                <img
+                  src="/eventpage/bayarea/assets/IMG_2411.jpg"
+                  alt="Participants meeting in a shared workspace"
+                  loading="eager"
+                  width="800"
+                  height="900"
+                />
+              </figure>
+              <figure class="polaroid" style="--x: 37%; --y: 71%; --tilt: -6deg">
+                <img
+                  src="/eventpage/bayarea/assets/IMG_2501.jpg"
+                  alt="The group listening to a presentation"
+                  loading="eager"
+                  width="800"
+                  height="900"
+                />
+              </figure>
+              <figure class="polaroid" style="--x: 53%; --y: 78%; --tilt: 4deg">
+                <img
+                  src="/eventpage/bayarea/assets/IMG_1747.jpg"
+                  alt="A detail captured during the trip"
+                  loading="eager"
+                  width="800"
+                  height="900"
+                />
+              </figure>
+              <svg class="doodle doodle-wave" viewBox="0 0 120 60" aria-hidden="true">
+                <g
+                  fill="none"
+                  stroke="#91b5df"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M5 42q13 7 25-1t24 0 25-1 33 0M17 32q13 3 23-8c6-7 7-16 20-18 13-2 21 10 13 17-5 4-13 1-12-5 0-4 4-6 7-3M16 51q17 5 30-1t28 0 27-1"
+                  />
+                  <path d="M40 24q-1-16 17-22" opacity=".4" />
+                </g></svg
+              ><svg
+                class="doodle extra-doodle doodle-mountains"
+                viewBox="0 0 180 105"
+                aria-hidden="true"
+              >
+                <g
+                  fill="none"
+                  stroke="#00002c"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="m5 88 51-69 52 67M75 43l20-31 71 76M41 39l13 10 9-10 12 7M82 33l14 9 11-12M5 91l163-1"
+                  />
+                  <path d="m24 87 22-26m63 23 11-15" stroke="#bbcce7" />
+                  <path
+                    d="M136 22a9 9 0 1 0 18 0 9 9 0 1 0-18 0m9-17v-4m18 22h5m-10-13 4-4"
+                    stroke="#F04A00"
+                  />
+                </g></svg
+              ><span class="photo-note note-home">Munich → San Francisco</span
+              ><span class="photo-note note-together"
+                >better with this crew
+                <svg viewBox="0 0 80 40" aria-hidden="true">
+                  <path d="M75 3Q23 0 14 30m-4-12 3 15 14-5" /></svg
+              ></span>
+            </div>
+          </div>
+          <div class="story-row story-row-2">
+            <article class="story-text">
+              <span class="note-label">THE PROGRAM</span>
+              <h2>European talent.<br /><em>Bay Area innovation.</em></h2>
+              <p>
+                START goes Bay Area is a
+                <strong>nonprofit international exchange program</strong> organized by START Munich.
+                Each March, participants spend <strong>two weeks in San Francisco</strong> exploring
+                the Bay Area’s technology and innovation ecosystem.
+              </p>
+              <p>
+                Through visits to startups, venture capital firms, research institutions, and
+                innovation hubs, the program creates space for
+                <strong>candid conversations with the people behind them</strong>. Its purpose is to
+                exchange ideas, understand how companies are built, and develop
+                <strong>lasting connections</strong>.
+              </p>
+            </article>
+            <div class="photo-cluster" aria-label="Photos from previous Bay Area trips">
+              <figure class="polaroid" style="--x: 35%; --y: 2%; --tilt: -7deg">
+                <img
+                  src="/eventpage/bayarea/assets/IMG_1382.jpg"
+                  alt="START Munich group at the Golden Gate Bridge"
+                  loading="eager"
+                  width="800"
+                  height="900"
+                />
+              </figure>
+              <figure class="polaroid" style="--x: 51%; --y: 6%; --tilt: 5deg">
+                <img
+                  src="/eventpage/bayarea/assets/stanford.jpg"
+                  alt="START Munich visiting a robotics laboratory at Stanford"
+                  loading="eager"
+                  width="800"
+                  height="900"
+                />
+              </figure>
+              <figure class="polaroid" style="--x: 68%; --y: 0%; --tilt: -4deg">
+                <img
+                  src="/eventpage/bayarea/assets/mgv.jpg"
+                  alt="START Munich group visiting MGV"
+                  loading="eager"
+                  width="800"
+                  height="900"
+                />
+              </figure>
+              <figure class="polaroid" style="--x: 84%; --y: 9%; --tilt: 7deg">
+                <img
+                  src="/eventpage/bayarea/assets/IMG_1881.jpg"
+                  alt="Trip participants on a university campus"
+                  loading="eager"
+                  width="800"
+                  height="900"
+                />
+              </figure>
+              <svg class="doodle doodle-plane" viewBox="0 0 160 85" aria-hidden="true">
+                <path
+                  d="M4 68 Q30 22 65 53 T122 42"
+                  fill="none"
+                  stroke="#bbcce7"
+                  stroke-width="1.5"
+                  stroke-dasharray="4 5"
+                />
+                <g
+                  transform="translate(112 15) rotate(-12)"
+                  fill="#fff"
+                  stroke="#00002c"
+                  stroke-width="1.2"
+                  stroke-linejoin="round"
+                >
+                  <path d="M0 14 39 0 24 32 16 22 6 27 9 18Z" />
+                  <path d="m9 18 30-18-23 22" fill="none" />
+                </g></svg
+              ><svg
+                class="doodle extra-doodle doodle-robot"
+                viewBox="0 0 110 130"
+                aria-hidden="true"
+              >
+                <g
+                  fill="none"
+                  stroke="#00002c"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="m30 31 47-2 4 35-50 2Z M35 72l40-2 4 33-44 3Z M46 65l1 7m18-8 1 7M52 28l-1-15M34 77 17 84l-6-13m65 6 19 7 6-14M43 107l-2 15-12 1m39-17 5 15 12-1"
+                  />
+                  <path d="m41 51 1-5m24 4-1-5m-19 13q10 5 17-1M44 83l23-1M51 91l11-1" />
+                  <circle cx="51" cy="10" r="4" stroke="#F04A00" />
+                  <path d="m2 60 8 3m91-7 7-4" stroke="#bbcce7" />
+                </g></svg
+              ><span class="photo-note note-lab"
+                >a closer look at the future
+                <svg viewBox="0 0 80 40" aria-hidden="true">
+                  <path d="M3 4q55-5 60 24m-13-5 14 8 7-12" /></svg></span
+              ><span class="photo-note note-campus">out of the classroom ↗</span>
+            </div>
+          </div>
+          <div class="story-row story-row-3 story-participants">
+            <article class="story-text">
+              <span class="note-label">THE PARTICIPANTS</span>
+              <h2>Twenty selected talents.<br />Two weeks in the Bay Area.</h2>
+              <p>
+                <strong>Twenty students are selected</strong> from the START Network for their
+                entrepreneurial ambition and curiosity. They bring perspectives from
+                <strong>business, engineering, computer science</strong>, and other disciplines,
+                united by an interest in building companies and solving meaningful problems.
+              </p>
+              <p>
+                Each participant has <strong>passed two competitive selections</strong>: first into
+                the START community, then into START goes Bay Area. They arrive ready to ask
+                thoughtful questions, contribute their own perspectives, and learn from founders,
+                researchers, investors, and one another.
+              </p>
+            </article>
+            <div class="photo-cluster" aria-label="Photos from previous Bay Area trips">
+              <figure class="polaroid" style="--x: 2%; --y: 36%; --tilt: 5deg">
+                <img
+                  src="/eventpage/bayarea/assets/IMG_1929.jpg"
+                  alt="Trip participants sharing a meal"
+                  loading="eager"
+                  width="800"
+                  height="900"
+                />
+              </figure>
+              <figure class="polaroid" style="--x: 18%; --y: 41%; --tilt: -7deg">
+                <img
+                  src="/eventpage/bayarea/assets/IMG_9570.jpg"
+                  alt="START Munich trip participants together"
+                  loading="eager"
+                  width="800"
+                  height="900"
+                />
+              </figure>
+              <figure class="polaroid" style="--x: 70%; --y: 37%; --tilt: 6deg">
+                <img
+                  src="/eventpage/bayarea/assets/IMG_1569.jpg"
+                  alt="A company visit and conversation"
+                  loading="eager"
+                  width="800"
+                  height="900"
+                />
+              </figure>
+              <figure class="polaroid" style="--x: 86%; --y: 42%; --tilt: -4deg">
+                <img
+                  src="/eventpage/bayarea/assets/IMG_1577.jpg"
+                  alt="Participants listening during a visit"
+                  loading="eager"
+                  width="800"
+                  height="900"
+                />
+              </figure>
+              <svg class="doodle doodle-bridge" viewBox="0 0 180 105" aria-hidden="true">
+                <g
+                  fill="none"
+                  stroke="#F04A00"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M7 76 173 70M9 80l162-6M48 28l-1 66m7-66-1 66m77-71-1 65m7-65-1 65M44 29l14-1m68-5h14M10 74Q30 73 50 31q41 63 83-5 20 43 40 45"
+                  />
+                  <path
+                    d="m23 69-1 7m13-21v21m29-30v29m15-16v16m15-13v12m15-21v20m14-29v29m26-17v15m12-8v8"
+                    stroke-width=".8"
+                  />
+                </g>
+                <path
+                  d="M8 98q18-8 35-1t35-2 33-1 33-1 25-3"
+                  fill="none"
+                  stroke="#bbcce7"
+                  stroke-width="2"
+                /></svg
+              ><svg
+                class="doodle extra-doodle doodle-chip"
+                viewBox="0 0 115 115"
+                aria-hidden="true"
+              >
+                <g
+                  fill="none"
+                  stroke="#00002c"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m30 29 54 2-1 55-56-2Z M39 40l34 1-1 32-35-1Z" />
+                  <path
+                    d="M39 17v12m12-14v14m13-13v14m13-12v12M39 85l-1 12m13-11v14m12-14v12m13-12v13M16 39l13 1m-14 12 13 1m-12 12 12-1m-13 12 12-1M85 41l12 1m-12 11h15M85 65l13 1M84 78h14"
+                  />
+                  <path d="m47 59 5-10 4 14 6-11 3 8" stroke="#F04A00" />
+                  <path d="m5 19 6 4m87 73 8 5M95 17l-4 6" stroke="#bbcce7" />
+                </g></svg
+              ><span class="photo-note note-between">the conversations in between…</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="visit-band"
+        id="connections"
+        aria-label="Companies and institutions visited on last year’s trip"
+      >
+        <div class="band-heading">
+          <span class="eyebrow">LAST YEAR’S VISITS</span
+          ><button id="logos-motion" aria-label="Pause logo animation">Ⅱ</button>
+        </div>
+        <div class="marquee">
+          <div class="marquee-track">
+            <div class="logo-set">
+              <div class="visit-logo logo-1">
+                <img
+                  src="/eventpage/bayarea/assets/logos/visit-1.png"
+                  alt="NVIDIA"
+                  width="160"
+                  height="90"
+                />
+              </div>
+              <div class="visit-logo logo-2">
+                <img
+                  src="/eventpage/bayarea/assets/logos/visit-2.png"
+                  alt="Notion"
+                  width="160"
+                  height="90"
+                />
+              </div>
+              <div class="visit-logo logo-3">
+                <img
+                  src="/eventpage/bayarea/assets/logos/visit-3.png"
+                  alt="Y Combinator"
+                  width="160"
+                  height="90"
+                />
+              </div>
+              <div class="visit-logo logo-4">
+                <img
+                  src="/eventpage/bayarea/assets/logos/visit-4.png"
+                  alt="Past visit company mark"
+                  width="160"
+                  height="90"
+                />
+              </div>
+              <div class="visit-logo logo-5">
+                <img
+                  src="/eventpage/bayarea/assets/logos/visit-5.png"
+                  alt="Stanford University"
+                  width="160"
+                  height="90"
+                />
+              </div>
+              <div class="visit-logo logo-6">
+                <img
+                  src="/eventpage/bayarea/assets/logos/visit-6.png"
+                  alt="Past visit company mark"
+                  width="160"
+                  height="90"
+                />
+              </div>
+              <div class="visit-logo logo-7">
+                <img
+                  src="/eventpage/bayarea/assets/logos/visit-7.png"
+                  alt="Spherecast"
+                  width="160"
+                  height="90"
+                />
+              </div>
+              <div class="visit-logo logo-8">
+                <img
+                  src="/eventpage/bayarea/assets/logos/visit-8.png"
+                  alt="Andreessen Horowitz"
+                  width="160"
+                  height="90"
+                />
+              </div>
+            </div>
+            <div class="logo-set" aria-hidden="true">
+              <div class="visit-logo logo-1">
+                <img
+                  src="/eventpage/bayarea/assets/logos/visit-1.png"
+                  alt=""
+                  width="160"
+                  height="90"
+                />
+              </div>
+              <div class="visit-logo logo-2">
+                <img
+                  src="/eventpage/bayarea/assets/logos/visit-2.png"
+                  alt=""
+                  width="160"
+                  height="90"
+                />
+              </div>
+              <div class="visit-logo logo-3">
+                <img
+                  src="/eventpage/bayarea/assets/logos/visit-3.png"
+                  alt=""
+                  width="160"
+                  height="90"
+                />
+              </div>
+              <div class="visit-logo logo-4">
+                <img
+                  src="/eventpage/bayarea/assets/logos/visit-4.png"
+                  alt=""
+                  width="160"
+                  height="90"
+                />
+              </div>
+              <div class="visit-logo logo-5">
+                <img
+                  src="/eventpage/bayarea/assets/logos/visit-5.png"
+                  alt=""
+                  width="160"
+                  height="90"
+                />
+              </div>
+              <div class="visit-logo logo-6">
+                <img
+                  src="/eventpage/bayarea/assets/logos/visit-6.png"
+                  alt=""
+                  width="160"
+                  height="90"
+                />
+              </div>
+              <div class="visit-logo logo-7">
+                <img
+                  src="/eventpage/bayarea/assets/logos/visit-7.png"
+                  alt=""
+                  width="160"
+                  height="90"
+                />
+              </div>
+              <div class="visit-logo logo-8">
+                <img
+                  src="/eventpage/bayarea/assets/logos/visit-8.png"
+                  alt=""
+                  width="160"
+                  height="90"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="team-section" id="team" aria-labelledby="team-title">
+        <div class="team-heading">
+          <span class="note-label">MEET THE ORGANIZERS</span>
+          <h2 id="team-title">The team behind<br /><em>the program.</em></h2>
+          <span class="team-margin-note">the people making it happen ↘</span>
+        </div>
+        <div class="team-portraits">
+          <a
+            class="team-card"
+            href="https://www.linkedin.com/in/mohammed-ws-thabit/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Mohammed Thabit on LinkedIn"
+            style="--card-tilt: -5deg"
+            ><figure>
+              <img
+                src="/eventpage/bayarea/assets/team/mohammed.png"
+                alt="Portrait of Mohammed Thabit"
+                width="800"
+                height="800"
+                loading="lazy"
+              />
+              <figcaption>
+                <span class="team-name">Mohammed Thabit</span
+                ><span class="team-link">LinkedIn <span aria-hidden="true">↗</span></span>
+              </figcaption>
+            </figure></a
+          ><a
+            class="team-card"
+            href="https://www.linkedin.com/in/siebeneicher/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Sonja Siebeneicher on LinkedIn"
+            style="--card-tilt: 3deg"
+            ><figure>
+              <img
+                src="/eventpage/bayarea/assets/team/sonja.png"
+                alt="Portrait of Sonja Siebeneicher"
+                width="800"
+                height="800"
+                loading="lazy"
+              />
+              <figcaption>
+                <span class="team-name">Sonja Siebeneicher</span
+                ><span class="team-link">LinkedIn <span aria-hidden="true">↗</span></span>
+              </figcaption>
+            </figure></a
+          ><a
+            class="team-card"
+            href="https://www.linkedin.com/in/anna-markgraf-5ba391272/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Anna Markgraf on LinkedIn"
+            style="--card-tilt: -3deg"
+            ><figure>
+              <img
+                src="/eventpage/bayarea/assets/team/anna.png"
+                alt="Portrait of Anna Markgraf"
+                width="800"
+                height="800"
+                loading="lazy"
+              />
+              <figcaption>
+                <span class="team-name">Anna Markgraf</span
+                ><span class="team-link">LinkedIn <span aria-hidden="true">↗</span></span>
+              </figcaption>
+            </figure></a
+          ><a
+            class="team-card"
+            href="https://www.linkedin.com/in/benedikt-grabmaier-4ba7b4295/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Benedikt Grabmaier on LinkedIn"
+            style="--card-tilt: 5deg"
+            ><figure>
+              <img
+                src="/eventpage/bayarea/assets/team/benedikt.png"
+                alt="Portrait of Benedikt Grabmaier"
+                width="800"
+                height="800"
+                loading="lazy"
+              />
+              <figcaption>
+                <span class="team-name">Benedikt Grabmaier</span
+                ><span class="team-link">LinkedIn <span aria-hidden="true">↗</span></span>
+              </figcaption>
+            </figure></a
+          ><a
+            class="team-card"
+            href="https://www.linkedin.com/in/maxlehl/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Max Lehl on LinkedIn"
+            style="--card-tilt: -4deg"
+            ><figure>
+              <img
+                src="/eventpage/bayarea/assets/team/max.png"
+                alt="Portrait of Max Lehl"
+                width="800"
+                height="800"
+                loading="lazy"
+              />
+              <figcaption>
+                <span class="team-name">Max Lehl</span
+                ><span class="team-link">LinkedIn <span aria-hidden="true">↗</span></span>
+              </figcaption>
+            </figure></a
+          >
+        </div>
+        <svg class="team-doodle" viewBox="0 0 150 75" aria-hidden="true">
+          <g fill="none" stroke="#bbcce7" stroke-width="1.4" stroke-linecap="round">
+            <path d="M4 25q25-24 48 2t44-1 46 7" stroke-dasharray="4 5" />
+            <path d="m130 30 14 5-1-14" stroke="#F04A00" />
+          </g>
+        </svg>
+      </section>
+    </main>
+    <footer>
+      <a class="brand" href="#" aria-label="START Munich home"
+        ><img
+          src="/eventpage/bayarea/assets/start-logo.svg"
+          alt="START Munich"
+          width="110"
+          height="50"
+      /></a>
+      <div>
+        <a href="https://www.startmunich.de/" target="_blank" rel="noopener">START Munich</a
+        ><a href="https://www.linkedin.com/company/startmunich/" target="_blank" rel="noopener"
+          >LinkedIn</a
+        ><a href="https://www.instagram.com/startmunich" target="_blank" rel="noopener">Instagram</a
+        ><a href="mailto:bayarea@startmunich.de">Email</a>
+      </div>
+    </footer>
+    <script src="/eventpage/bayarea/globe.js?v=25"></script>
+    <script src="/eventpage/bayarea/reveal.js"></script>
+    <svg class="filter-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="monochrome" color-interpolation-filters="sRGB">
+          <feColorMatrix type="saturate" values="0" />
+          <feComponentTransfer>
+            <feFuncR type="linear" slope="10" intercept="-8" />
+            <feFuncG type="linear" slope="10" intercept="-8" />
+            <feFuncB type="linear" slope="10" intercept="-8" />
+          </feComponentTransfer>
+        </filter>
+      </defs>
+    </svg>
+  </body>
+</html>
